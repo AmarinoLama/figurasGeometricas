@@ -7,6 +7,7 @@ public abstract class FiguraGeometrica {
     public double area;
 
     public FiguraGeometrica() {
+        this.nombre = "alguna figura";
     }
 
     public FiguraGeometrica(String nombre) {
