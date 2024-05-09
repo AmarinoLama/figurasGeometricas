@@ -2,7 +2,11 @@ package edu.badpals.figurasgeometricas;
 
 public class Circulo extends FiguraGeometrica {
 
-    private double radio;
+    public double radio = 0.0;
+
+    public Circulo() {
+        super();
+    }
 
     public Circulo(double radio) {
         super();
