@@ -3,7 +3,7 @@ package edu.badpals.figurasgeometricas;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<FiguraGeometrica> figuras = new ArrayList<>();
+        /*ArrayList<FiguraGeometrica> figuras = new ArrayList<>();
 
         // test constructores
 
@@ -33,6 +33,6 @@ public class Main {
         for (FiguraGeometrica figura : figuras){
             System.out.println("Area del " + figura.getNombre() + " = " + figura.area());
         }
-
+        */
     }
 }
