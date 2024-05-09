@@ -19,6 +19,6 @@ public class Cuadrado extends FiguraGeometrica {
 
     @Override
     public void calcularArea() {
-        this.area = Math.PI * Math.pow(this.radio, 2);
+        this.area = Math.pow(this.lado, 2);
     }
 }
