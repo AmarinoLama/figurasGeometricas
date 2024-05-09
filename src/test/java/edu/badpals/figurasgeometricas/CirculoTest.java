@@ -31,4 +31,11 @@ class CirculoTest {
         Circulo circulo = new Circulo("Circulo", -5);
         assertEquals("Circulo" , circulo.nombre);
     }
+
+    @Test
+    void testConstructorVacio() {
+        Circulo circulo = new Circulo();
+        assertEquals(0, circulo.radio);
+        assertEquals("alguna figura", circulo.nombre);
+    }
 }
