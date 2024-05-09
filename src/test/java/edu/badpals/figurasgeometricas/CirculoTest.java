@@ -19,4 +19,16 @@ class CirculoTest {
         circulo.calcularArea();
         assertEquals(0, circulo.area, 0.01);
     }
+
+    @Test
+    void testNombreFiguraUno() {
+        Circulo circulo = new Circulo(-5);
+        assertEquals("alguna figura" , circulo.nombre);
+    }
+
+    @Test
+    void testNombreFiguraDos() {
+        Circulo circulo = new Circulo("Circulo", -5);
+        assertEquals("Circulo" , circulo.nombre);
+    }
 }
