@@ -2,8 +2,12 @@ package edu.badpals.figurasgeometricas;
 
 public class Rectangulo extends FiguraGeometrica {
 
-    public double base;
-    public double altura;
+    public double base = 0.0;
+    public double altura = 0.0;
+
+    public Rectangulo() {
+        super();
+    }
 
     public Rectangulo(double base, double altura) {
         super();
@@ -19,6 +23,6 @@ public class Rectangulo extends FiguraGeometrica {
 
     @Override
     public void calcularArea() {
-
+        this.area = this.base * this.altura;
     }
 }
