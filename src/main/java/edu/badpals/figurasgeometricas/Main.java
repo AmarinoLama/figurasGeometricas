@@ -1,9 +1,11 @@
 package edu.badpals.figurasgeometricas;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
-        /*ArrayList<FiguraGeometrica> figuras = new ArrayList<>();
+        ArrayList<FiguraGeometrica> figuras = new ArrayList<>();
 
         // test constructores
 
@@ -31,8 +33,9 @@ public class Main {
         figuras.add(elipseConstructorLocal);
 
         for (FiguraGeometrica figura : figuras){
-            System.out.println("Area del " + figura.getNombre() + " = " + figura.area());
+            figura.calcularArea();
+            System.out.println("Area del " + figura.nombre + " = " + figura.area);
         }
-        */
+
     }
 }
