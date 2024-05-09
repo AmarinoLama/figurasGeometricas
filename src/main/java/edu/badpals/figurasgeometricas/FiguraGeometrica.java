@@ -3,8 +3,8 @@ package edu.badpals.figurasgeometricas;
 import java.util.ArrayList;
 
 public abstract class FiguraGeometrica {
-    public String nombre;
-    public double area;
+    public String nombre = "";
+    public double area = 0.0;
 
     public FiguraGeometrica() {
         this.nombre = "alguna figura";
