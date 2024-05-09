@@ -3,8 +3,8 @@ package edu.badpals.figurasgeometricas;
 import java.util.ArrayList;
 
 public abstract class FiguraGeometrica {
-    private String nombre;
-    private double area;
+    public String nombre;
+    public double area;
 
     public FiguraGeometrica() {
     }
@@ -13,24 +13,16 @@ public abstract class FiguraGeometrica {
         this.nombre = nombre;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public double getArea() {
-        return area;
-    }
-
     public abstract void calcularArea();
 
     @Override
     public String toString() {
         StringBuilder salida = new StringBuilder();
         salida.append("Figura:")
-            .append(getNombre())
+            .append(this.nombre)
             .append("\t")
             .append("Area: ")
-            . append(getArea());
+            . append(this.area);
         return salida.toString();
     }
 
