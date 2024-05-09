@@ -12,7 +12,7 @@ public class Cuadrado extends FiguraGeometrica {
         this.lado = lado;
     }
 
-    public Cuadrado(String nombre, double radio) {
+    public Cuadrado(String nombre, double lado) {
         super(nombre);
         this.lado = lado;
     }
