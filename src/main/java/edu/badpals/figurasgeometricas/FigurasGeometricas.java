@@ -12,6 +12,17 @@ public abstract class  FigurasGeometricas {
         figuras.add(figura);
     }
 
-    pub
+    @Override
+    public String toString() {
+        StringBuilder salida = new StringBuilder();
+        for (FigurasGeometricas figura : figuras) {
+            salida.append("Figura:")
+                    .append(figura.toString())
+                    .append("\t")
+                    .append("Area: ")
+                    .append(figura.area());
+        }
+        return salida.toString();
+    }
 
 }
