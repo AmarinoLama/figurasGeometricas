@@ -1,6 +1,6 @@
 package edu.badpals.figurasgeometricas;
 
-public class Cuadrado {
+public class Cuadrado extends FiguraGeometrica {
     public double lado = 0.0;
 
     public Cuadrado() {
