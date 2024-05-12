@@ -1,6 +1,6 @@
 package edu.badpals.figurasgeometricas;
 
-public class Rectangulo extends FiguraGeometrica {
+public class Rectangulo extends FiguraGeometrica implements Drawable {
 
     public double base = 0.0;
     public double altura = 0.0;
@@ -24,5 +24,10 @@ public class Rectangulo extends FiguraGeometrica {
     @Override
     public void calcularArea() {
         this.area = this.base * this.altura;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Dibujo rectángulo");
     }
 }
