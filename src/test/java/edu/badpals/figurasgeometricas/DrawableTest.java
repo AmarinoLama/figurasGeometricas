@@ -1,5 +1,13 @@
 package edu.badpals.figurasgeometricas;
 
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class DrawableTest {
     private static ArrayList<Drawable> figuras;
 
@@ -60,8 +68,9 @@ public class DrawableTest {
 
         Circulo vistaCirculo;
         vistaCirculo = (Circulo) circulito;
+        vistaCirculo.calcularArea();
 
-        assertEquals(Math.PI * Math.pow(5, 2), vistaCirculo.getArea(), 0.1);
+        assertEquals(Math.PI * Math.pow(5, 2), vistaCirculo.area, 0.1);
     }
 
 	/*@Test
