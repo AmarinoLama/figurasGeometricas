@@ -1,6 +1,6 @@
 package edu.badpals.figurasgeometricas;
 
-public class Elipse extends FiguraGeometrica {
+public class Elipse extends FiguraGeometrica implements Drawable {
     public double radioA = 0.0;
     public double radioB = 0.0;
 
@@ -23,5 +23,10 @@ public class Elipse extends FiguraGeometrica {
     @Override
     public void calcularArea() {
         this.area = Math.PI * this.radioA * this.radioB;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Dibujo elipse");
     }
 }
