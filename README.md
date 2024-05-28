@@ -1,0 +1,1 @@
+Kata propuesto en clase por nuestro profe, el cual consiste en crear una clase abstracta y practicar la herdanza de los métodos, atributos, entender como funcionan las anotaciones @Override y crear subclases.
